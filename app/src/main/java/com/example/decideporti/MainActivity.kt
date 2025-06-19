@@ -4,12 +4,15 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.decideporti.ui.theme.DecidePorTiTheme
 
@@ -31,16 +34,22 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun App(modifier: Modifier = Modifier) {
+    Column {
+        modifier = modifier.fillMaxSize()
+
     Text(
-        text = "Hello "
+        text = "Estás na Dúvida?",
+        style = MaterialTheme.typography.titleMedium,
+        fontWeight = FontWeight.Bold,
         modifier = modifier
     )
+        }
 }
 
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
     DecidePorTiTheme {
-        App("Android")
+        App()
     }
 }
