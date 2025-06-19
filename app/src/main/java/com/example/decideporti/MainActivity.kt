@@ -37,6 +37,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun App(modifier: Modifier = Modifier) {
+    var message = ""
     Column (
         modifier = modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -52,7 +53,7 @@ fun App(modifier: Modifier = Modifier) {
             style = MaterialTheme.typography.bodyMedium,
         )
         Text(
-            text = "Eis a tua reposta...",
+            text = message,
             style = MaterialTheme.typography.titleLarge,
             fontWeight = FontWeight.Bold,
         )
