@@ -45,7 +45,7 @@ fun App(modifier: Modifier = Modifier) {
             text = "Estás na Dúvida?",
             style = MaterialTheme.typography.titleMedium,
             fontWeight = FontWeight.Bold,
-            modifier = modifier,
+            
         )
         Text(
             text = "Faz uma pergunta e irei ajudar-te a decidir ;)",
