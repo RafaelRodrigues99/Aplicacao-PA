@@ -34,9 +34,9 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun App(modifier: Modifier = Modifier) {
-    Column {
+    Column (
         modifier = modifier.fillMaxSize()
-
+    ){
         Text(
             text = "Estás na Dúvida?",
             style = MaterialTheme.typography.titleMedium,
