@@ -56,7 +56,9 @@ fun App(modifier: Modifier = Modifier) {
             style = MaterialTheme.typography.titleLarge,
             fontWeight = FontWeight.Bold,
         )
-        Button() {
+        Button(
+            onClick = {}, //é executado depois do clique
+        ) {
             Text("Perguntar")
         }
         }
