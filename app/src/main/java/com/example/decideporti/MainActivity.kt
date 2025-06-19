@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -45,7 +46,6 @@ fun App(modifier: Modifier = Modifier) {
             text = "Estás na Dúvida?",
             style = MaterialTheme.typography.titleMedium,
             fontWeight = FontWeight.Bold,
-            
         )
         Text(
             text = "Faz uma pergunta e irei ajudar-te a decidir ;)",
@@ -56,6 +56,9 @@ fun App(modifier: Modifier = Modifier) {
             style = MaterialTheme.typography.titleLarge,
             fontWeight = FontWeight.Bold,
         )
+        Button() {
+            
+        }
         }
 }
 
