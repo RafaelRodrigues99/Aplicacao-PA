@@ -50,7 +50,7 @@ fun App(modifier: Modifier = Modifier) {
         Text(
             text = "Eis a tua reposta...",
             style = MaterialTheme.typography.titleLarge,
-            fontWeight = FontWeight.Bold
+            fontWeight = FontWeight.Bold,
         )
         }
 }
