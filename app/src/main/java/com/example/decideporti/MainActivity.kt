@@ -37,12 +37,21 @@ fun App(modifier: Modifier = Modifier) {
     Column {
         modifier = modifier.fillMaxSize()
 
-    Text(
-        text = "Estás na Dúvida?",
-        style = MaterialTheme.typography.titleMedium,
-        fontWeight = FontWeight.Bold,
-        modifier = modifier
-    )
+        Text(
+            text = "Estás na Dúvida?",
+            style = MaterialTheme.typography.titleMedium,
+            fontWeight = FontWeight.Bold,
+            modifier = modifier,
+        )
+        Text(
+            text = "Faz uma pergunta e irei ajudar-te a decidir ;)",
+            style = MaterialTheme.typography.bodyMedium,
+        )
+        Text(
+            text = "Eis a tua reposta...",
+            style = MaterialTheme.typography.titleLarge,
+            fontWeight = FontWeight.Bold
+        )
         }
 }
 
