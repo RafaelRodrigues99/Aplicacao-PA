@@ -57,7 +57,7 @@ fun App(modifier: Modifier = Modifier) {
             fontWeight = FontWeight.Bold,
         )
         Button() {
-            
+            Text("Perguntar")
         }
         }
 }
