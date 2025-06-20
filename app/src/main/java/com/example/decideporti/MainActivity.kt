@@ -62,6 +62,7 @@ fun App(modifier: Modifier = Modifier) {
         )
         Button(
             onClick = {
+                val results = listOf("Com certeza","Não!", "Talvez","Sim!", "Nunca na vida!")
                 message.value = "teste"
             }, //é executado depois do clique
         ) {
