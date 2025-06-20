@@ -65,7 +65,8 @@ fun App(modifier: Modifier = Modifier) {
             onClick = {
                 val results = listOf("Com certeza","Não!", "Talvez","Sim!", "Nunca na vida!")
                 val index = Random.Default.nextInt(results.size)
-                
+                //0 até 4, pois começa no 0 e vai até ao 4, ou seja, 5 opções
+                message.value = results[index]
             }, //é executado depois do clique
         ) {
             Text("Perguntar")
