@@ -20,6 +20,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.decideporti.ui.theme.DecidePorTiTheme
+import kotlin.random.Random
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -63,7 +64,8 @@ fun App(modifier: Modifier = Modifier) {
         Button(
             onClick = {
                 val results = listOf("Com certeza","Não!", "Talvez","Sim!", "Nunca na vida!")
-                message.value = "teste"
+                val index = Random.Default.nextInt(results.size)
+                
             }, //é executado depois do clique
         ) {
             Text("Perguntar")
