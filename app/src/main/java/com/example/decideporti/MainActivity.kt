@@ -63,6 +63,7 @@ fun App(modifier: Modifier = Modifier) {
         TextField(
             value = text.value,
             onValueChange = { newText -> text.value = newText },
+            label = { Text("Faz a tua pergunta!") },
 
 
             )
