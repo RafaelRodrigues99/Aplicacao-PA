@@ -61,10 +61,11 @@ fun App(modifier: Modifier = Modifier) {
             style = MaterialTheme.typography.bodyMedium,
         )
         TextField(
-            value = text.value
+            value = text.value,
+            onValueChange = { newText -> text.value = newText },
 
 
-        )
+            )
         Text(
             text = message.value,
             style = MaterialTheme.typography.titleLarge,
