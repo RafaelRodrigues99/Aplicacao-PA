@@ -42,7 +42,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun App(modifier: Modifier = Modifier) {
     val message = remember { mutableStateOf("") }
-
+    val text = remember { mutableStateOf("") }
 
 
     Column(
@@ -61,7 +61,9 @@ fun App(modifier: Modifier = Modifier) {
             style = MaterialTheme.typography.bodyMedium,
         )
         TextField(
-            
+            value = text.value
+
+
         )
         Text(
             text = message.value,
