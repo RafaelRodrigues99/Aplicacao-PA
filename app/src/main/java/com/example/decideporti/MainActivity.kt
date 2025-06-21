@@ -74,7 +74,7 @@ fun App(modifier: Modifier = Modifier) {
         )
         Button(
             onClick = {
-                val results = listOf("Com certeza!", "Não!", "Talvez!", "Sim!", "Nunca na vida!")
+                val results = listOf("Claro que sim!", "Nem penses!", "Lá sei eu!", "Pergunta amanhã, hoje não me apetece te responder.", "Confia, não queiras saber a resposta.", "Definitivamente não.", "Com toda a certeza!", "Não sou bruxo para adivinhar ", "Não sei... pergunta ao teu cão.", "Faz o que o teu coração mandar.", "A resposta está dentro de ti... procura melhor.", "Melhor não arriscar.", "A resposta é: francesinha.", "Se fosses um Pokémon, era logo sim.", "Depende... tens fome?", "Escolhe outra pergunta, essa não conta.", "Sabes... eu não faço a minima", "O universo diz que sim.", "Não... ou sim? Agora fiquei confuso.", "Faz primeiro, pensa depois.", "Claramente sim. Ou claramente não. Decide tu.")
                 val index = Random.Default.nextInt(results.size)
                 message.value = results[index]
             }
