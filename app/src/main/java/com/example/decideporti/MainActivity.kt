@@ -23,7 +23,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.decideporti.ui.theme.DecidePorTiTheme
 import kotlin.random.Random
 
-
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,14 +43,14 @@ class MainActivity : ComponentActivity() {
 fun App(modifier: Modifier = Modifier) {
     val message = remember { mutableStateOf("") }
 
+
+
     Column(
         modifier = modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center,
     ) {
-        TextField(
-            
-        )
+
         Text(
             text = "Estás na Dúvida?",
             style = MaterialTheme.typography.titleMedium,
@@ -71,11 +70,10 @@ fun App(modifier: Modifier = Modifier) {
         )
         Button(
             onClick = {
-                val results = listOf("Com certeza!","Não!", "Talvez!","Sim!", "Nunca na vida!")
+                val results = listOf("Com certeza!", "Não!", "Talvez!", "Sim!", "Nunca na vida!")
                 val index = Random.Default.nextInt(results.size)
-                //0 até 4, pois começa no 0 e vai até ao 4, ou seja, 5 opções
                 message.value = results[index]
-            }, //é executado depois do clique
+            }
         ) {
             Text("Perguntar")
         }
