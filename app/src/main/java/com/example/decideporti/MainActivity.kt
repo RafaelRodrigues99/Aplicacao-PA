@@ -61,6 +61,9 @@ fun App(modifier: Modifier = Modifier) {
             text = "Faz uma pergunta e irei ajudar-te a decidir ;)",
             style = MaterialTheme.typography.bodyMedium,
         )
+        TextField(
+            
+        )
         Text(
             text = message.value,
             style = MaterialTheme.typography.titleLarge,
